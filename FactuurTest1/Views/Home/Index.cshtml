@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Facteur</h1>
+    <p class="lead">Facteur is een eenvoudige applicatie die je helpt bij het verzamelen van postadressen.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Alles over Facteur &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Aan de slag</h2>
+        <p>
+            Maar je eigen postbus en nodig mensen uit om hun gegevens bij jou achter te laten.
+        </p>
+        <p> @Html.ActionLink("Maak een postbus »", "New", "Mailbox", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Laat je adres achter</h2>
+        <p>Wil je iemand jou adres geven. <br /><br /></p>
+        <p> @Html.ActionLink("Zoek een postbus »", "Search", "Mailbox", null, new { @class = "btn btn-default" })</p>
+        </div>
+    <div class="col-md-4">
+        <h2>Gegevens aanpassen</h2>
+        <p>Heb je in het verleden je adres doorgegeven via Facteur, maar wil je dit aanpassen. Geen probleem!</p>
+        <p> @Html.ActionLink("Adres aanpassen »", "Edit", "Address", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
